@@ -8,6 +8,7 @@ const user = {
     name: `james marques`,
     avatarUrl: `furia-seeklogo.svg`
 }
+
 const UserLayout: React.FC<UserLayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen bg-gray-950 text-white">

@@ -30,9 +30,10 @@ export default function SideBar({ user }: SidebarProps){
               <div>
                 <h3 className="text-gray-400 text-xs uppercase tracking-wider mb-2">Jogos</h3>
                 <div className="flex flex-col space-y-3">
-                  <NavItem icon={<SiValorant />} label="Valorant" />
-                  <NavItem icon={<SiCounterstrike />} label="CS2" />
-                  <NavItem icon={<SiLeagueoflegends />} label="League of Legends" />
+                  <NavItem icon={<SiValorant />} label="Valorant" link='/valorant'/>
+                  <NavItem icon={<SiCounterstrike />} label="CS2" link='/cs'/>
+                  <NavItem icon={<SiLeagueoflegends />} label="League of Legends" link='/lol'/>
+                  <NavItem icon={<SiLeagueoflegends />} label="Rocket League" link='/rockel'/>
                 </div>
               </div>
     
@@ -45,19 +46,19 @@ export default function SideBar({ user }: SidebarProps){
               <div>
                 <h3 className="text-gray-400 text-xs uppercase tracking-wider mb-2">Resultados</h3>
                 <div className="flex flex-col space-y-3">
-                  <NavItem icon={<FaHistory />} label="Resultados Anteriores" />
+                  <NavItem icon={<FaHistory />} label="Resultados Anteriores" link='results'/>
                 </div>
               </div>    
               <div>
                 <h3 className="text-gray-400 text-xs uppercase tracking-wider mb-2">Notícias</h3>
                 <div className="flex flex-col space-y-3">
-                  <NavItem icon={<FaNewspaper />} label="Últimas Notícias" />
+                  <NavItem icon={<FaNewspaper />} label="Últimas Notícias" link='/feed'/>
                 </div>
               </div>
               <div>
                 <h3 className="text-gray-400 text-xs uppercase tracking-wider mb-2">Shop</h3>
                 <div className="flex flex-col space-y-3">
-                  <NavItem icon={<FaShoppingBag />} label="Últimas Notícias" />
+                  <NavItem icon={<FaShoppingBag />} label="Nossa Loja" link='https://www.furia.gg/'/>
                 </div>
               </div>
               
